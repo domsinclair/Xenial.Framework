@@ -5,15 +5,16 @@ sidebarDepth: 5
 
 # ModelBuilders - Introduction
 
-Modelbuilders are an [imperative/procedural](https://en.wikipedia.org/wiki/Imperative_programming) way of adding metadata and attributes to the excelent [XAF TypesInfo system](https://docs.devexpress.com/eXpressAppFramework/113669/concepts/business-model-design/types-info-subsystem).
+
+Modelbuilders are an excellent way of adding metadata and attributes to the XAF TypesInfo system.
 
 It's based around an [Fluent Interface Pattern](https://www.martinfowler.com/bliki/FluentInterface.html) and highly inspired by [EntityFramework's ModelBuilder's](https://docs.microsoft.com/en-us/ef/core/modeling/).
 
-ModelBuilders are one of the many `NonVisual Components` of Xenial.Framework and designed around best practices and working most efficiently in a team, however there are several benefits for smaller teams and projects as well.
+ModelBuilders are one of the many Non-Visual components of the Xenial.Framework, designed to encourage best practices and a more efficient workflow for large teams, but they bring equal benefits to smaller teams and projects as well.
 
 ## Installation
 
-In you [platform agnostic module](https://docs.devexpress.com/eXpressAppFramework/118045/concepts/application-solution-components/application-solution-structure#projects) install the [Xenial.Framework](https://www.nuget.org/packages/Xenial.Framework/) package.
+In your [platform agnostic module](https://docs.devexpress.com/eXpressAppFramework/118045/concepts/application-solution-components/application-solution-structure#projects) install the [Xenial.Framework](https://www.nuget.org/packages/Xenial.Framework/) package.
 
 <code-group>
 <code-block title=".NET CLI">
@@ -44,21 +45,21 @@ In you [platform agnostic module](https://docs.devexpress.com/eXpressAppFramewor
 </code-group>
 
 ::: tip
-In your project this normally is called `MyApplication.Module.csproj`.  
-You of course can use the [NuGet Package Manager Dialog in Visual Studio](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio).  
-Usage in platform specific module is of course supported, but we will focus on the platform agnostic perspective in this guide.
+By convention the platform agnostic module is usually named <Your Application>.Module.
+If you're unfamiliar with the Command Line Interface (cli) you can always use the Nuget package manager.
+Whilst the Xenial.Framework can of course be used in platform specific modules, for the purposes of this documentation emphasis will be given to its use in the platform agnostic module of your project.
 :::
 
 ## Usage
 
-There are several ways to use `ModelBuilders` in your application. From a fluent inline approach to complete [buddy type](https://stackoverflow.com/a/38373456/2075758). That means we have a secondary utility class to specify the metadata for a business object.
+There are several ways to use `ModelBuilders` in your application. From a fluent inline approach to complete [buddy type](https://stackoverflow.com/a/38373456/2075758). That requires a secondary utility class to specify the metadata for a business object.
 
-Imaging we have the following [XPO business class](https://docs.devexpress.com/eXpressAppFramework/113640/getting-started/in-depth-tutorial-winforms-aspnet/business-model-design/business-model-design-with-express-persistent-objects) based on the Contact/Task Management XAF Demo.
+Consider the following [XPO business class](https://docs.devexpress.com/eXpressAppFramework/113640/getting-started/in-depth-tutorial-winforms-aspnet/business-model-design/business-model-design-with-express-persistent-objects) based on the Contact/Task Management XAF Demo.
 
 <<< @/guide/samples/DemoTaskBeforeModelBuilder.cs
 
 ::: tip
-NonPersistent classes and EntityFramework do also work, but for simplicity we will focus on XPO business objects in this docs.
+The Xenial Framework also supports Non-Persistent and EntityFramework but for the benefit of simplicity this documentation will focus on XPO Business Objects.
 :::
 
 ### Naming conventions
