@@ -4,10 +4,10 @@ title: Introduction
 
 # Introduction
 
-**Xenial.Framework** is a set of powerful modules for [DevExpress expressAppFramework](https://www.devexpress.com/XAF).  
-Handcrafted after 10 years experience with the framework, from small applications to large scale systems with dozens of developers, it helps you build robust, state of the art applications quickly and allow you to scale your future development efforts easily, without getting in your way.
+**Xenial.Framework** is a set of powerful modules for the [DevExpress expressAppFramework (XAF)](https://www.devexpress.com/XAF).  
+Handcrafted following 10 years experience with the framework, working with small applications to large scale systems with dozens of developers, Xeenial Framework will help you build robust, state of the art applications quickly and allow you to scale your future development efforts easily, without getting in your way.
 
-There are a couple of key concepts we follow:
+The framework was designed to adhere to the following principles:
 
 #### Easy
 
@@ -15,18 +15,18 @@ You don't need to learn any new concepts if you are already familiar with XAF, n
 
 #### Flexible
 
-We provide solutions at any level of the stack, you can use the *whole* package, but your are not forced to.
+You can use as much or as little of the framework as befits the requirements of the application upon which you are working.
 
 #### Focused
 
-Features are developed with years of experience, solving most (LOB) development challenges at it's core.
+The framework's featureset has been developed from experiences gained from the challenges that arise from developing Line of Business(LOB) applications.
 
 ## Key Concepts
 
-Xenial.Framework supports both the [ModelEditor](https://docs.devexpress.com/eXpressAppFramework/112582/concepts/application-model/model-editor) and code-centric approaches and uses all the basic primitives that XAF provides. We also provide a convention based framework that helps you and your team to create your own domain specific rules, resulting in more consistent applications with a less configuration heavy approach.
+Support is provided for both the [ModelEditor](https://docs.devexpress.com/eXpressAppFramework/112582/concepts/application-model/model-editor) and a code-centric approach to XAF development utilising all the basic primitives provided by XAF. Xenial provides a convention based framework that helps you and your team to create your own domain specific rules, resulting in more consistent applications with less need for extensive configuration.
 
 ::: tip
-You can mix and match all approaches and use the right tool for a particular problem
+Xenial Framework actively encourages a multi faceted approach to problem solving and the use of the right tool for the job in hand.
 :::
 
 <div style="text-align: center">
